@@ -10,6 +10,7 @@
 /build
 
 /.idea
+/.history
 
 # misc
 .DS_Store
