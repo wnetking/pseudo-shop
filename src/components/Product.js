@@ -34,9 +34,13 @@ function Product(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button dense color="primary" onClick={props.onDelete.bind(null, props.data.id)}>
-            delete
-          </Button>
+          {props.admin ?
+            <Button dense color="primary" onClick={props.onDelete.bind(null, props.data.id)}>
+              delete
+            </Button>
+            :
+            null
+          }
           <Typography component="p" className={classes.price}>
             {props.data.price}
           </Typography>
