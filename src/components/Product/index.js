@@ -4,20 +4,7 @@ import {withStyles} from 'material-ui/styles';
 import Card, {CardActions, CardContent, CardMedia} from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
-
-const styles = {
-  card : {
-    maxWidth: 345,
-  },
-  media: {
-    height: 250
-  },
-  price: {
-    marginLeft : 'auto',
-    marginRight: '15px',
-    fontWeight : '700'
-  }
-};
+import {styles} from './styles'
 
 function Product(props) {
   const classes = props.classes;

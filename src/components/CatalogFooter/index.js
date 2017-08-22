@@ -4,26 +4,8 @@ import {withStyles} from 'material-ui/styles';
 import Badge from 'material-ui/Badge';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import {styles} from './styles'
 
-const styles = theme => ({
-  root : {
-    display        : 'flex',
-    marginTop      : 30,
-    marginBottom   : 30,
-    padding        : '20px 15px',
-    width          : '100%',
-    backgroundColor: "#fff",
-    boxSizing      : 'border-box'
-  },
-  btn  : {
-    marginLeft: "auto"
-  },
-  badge: {
-    margin      : `0 ${theme.spacing.unit * 2}px`,
-    paddingRight: 15,
-    alignSelf   : 'center'
-  }
-});
 
 function CatalogFooter(props) {
   const getAdditionalInfo = () => {
@@ -55,7 +37,7 @@ function CatalogFooter(props) {
         All Products Count
       </Badge>
       <Typography component="p" className={classes.badge}>
-        Average price: <span>{averagePrice.toFixed(2)}$</span>
+        Average price: <span>{!isNaN(averagePrice) ? averagePrice.toFixed(2) : 0}$</span>
       </Typography>
       <Typography component="p" className={classes.badge}>
         Total price: <span>{totalPrice}$</span>

@@ -3,13 +3,11 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
-import '../styles/App.css';
-
 import Catalog from './Catalog'
 import Header from './Header'
 import CreateProduct from './CreateProduct'
 import Forbidden from '../components/Forbidden'
-import CatalogFooter from '../components/CatalogFooter'
+import CatalogFooter from '../components/CatalogFooter/'
 
 import * as mainActions from '../actions'
 

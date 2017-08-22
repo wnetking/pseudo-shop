@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Grid from 'material-ui/Grid';
 import {CircularProgress} from 'material-ui/Progress';
 
-import Product from '../components/Product'
+import Product from '../components/Product/'
 
 class Catalog extends Component {
   render() {

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 100px;
   background-color: #eeeeee;
   font-family: sans-serif;
 }
